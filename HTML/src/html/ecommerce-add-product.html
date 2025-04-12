@@ -1,0 +1,98 @@
+@SPK@include("partials/mainhead.html")
+<link rel="stylesheet" href="../assets/libs/quill/quill.snow.css">
+<link rel="stylesheet" href="../assets/libs/quill/quill.bubble.css">
+<link rel="stylesheet" href="../assets/libs/dropzone/dropzone.css">
+
+</head>
+
+<body>
+
+    @SPK@include("partials/switcher.html")
+    @SPK@include("partials/loader.html")
+
+    <div class="page">
+        @SPK@include("partials/header.html")
+        @SPK@include("partials/sidebar.html")
+
+        <!-- Start::app-content -->
+        <div class="main-content app-content">
+            <div class="container-fluid">
+
+                @SPK@include("partials/page-header.html", {"title": "Add Product", "subtitle": 'ECommerce'})
+
+                <!-- Start::row-1 -->
+                <div class="row row-sm">
+                    <div class="col-lg-12 col-md-12 col-md-12">
+                        <div class="card custom-card">
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label class="fw-medium form-label">Product Name</label>
+                                    <input type="text" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="form-group">
+                                    <label class="fw-medium form-label">Category</label>
+                                    <select class="form-control select2" data-trigger>
+                                        <option value="Party Wear">
+                                            Party Wear
+                                        </option>
+                                        <option value="Casual Wear">
+                                            Casual Wear
+                                        </option>
+                                        <option value="Wedding">
+                                            Wedding
+                                        </option>
+                                        <option value="Festive">
+                                            Festive
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="fw-medium form-label">Price</label>
+                                    <input type="text" class="form-control" placeholder="Price">
+                                </div>
+                                <div class="ql-wrapper ql-wrapper-demo mb-3">
+                                    <label class="fw-medium form-label">Product Description</label>
+                                    <div id="editor"></div>
+                                </div>
+                                <label class="fw-medium form-label">Upload Product</label>
+                                <div>
+                                    <form data-single="true" method="post" action="https://httpbin.org/post" class="dropzone"></form>
+                                </div>
+                            </div>
+                            <div class="card-footer mb-1">
+                                <a href="javascript:void(0)" class="btn btn-primary">Add Product</a>
+                                <a href="javascript:void(0)" class="btn btn-danger">Cancel</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End::row-1 -->
+
+            </div>
+        </div>
+        <!-- End::app-content -->
+
+        @SPK@include("partials/headersearch_modal.html")
+        @SPK@include("partials/footer.html")
+        @SPK@include("partials/right-sidebar.html")
+
+    </div>
+
+    @SPK@include("partials/commonjs.html")
+
+    @SPK@include("partials/custom_switcherjs.html")
+
+    <!-- Quill Editor JS -->
+    <script src="../assets/libs/quill/quill.min.js"></script>
+
+    <!-- Dropzone JS -->
+    <script src="../assets/libs/dropzone/dropzone-min.js"></script>
+    <script src="../assets/js/ecommerce-add-product.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../assets/js/custom.js"></script>
+    
+
+</body>
+
+</html>

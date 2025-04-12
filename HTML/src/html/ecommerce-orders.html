@@ -1,0 +1,331 @@
+@SPK@include("partials/mainhead.html")
+
+</head>
+
+<body>
+
+    @SPK@include("partials/switcher.html")
+    @SPK@include("partials/loader.html")
+
+    <div class="page">
+        @SPK@include("partials/header.html")
+        @SPK@include("partials/sidebar.html")
+
+        <!-- Start::app-content -->
+        <div class="main-content app-content">
+            <div class="container-fluid">
+
+                @SPK@include("partials/page-header.html", {"title": "Orders", "subtitle": 'ECommerce'})
+
+                <!-- Start::row-1 -->
+                <div class="row row-sm">
+                    <div class="col-md-12 col-lg-12">
+                        <div class="card custom-card">
+                            <div class="card-header  border-bottom-0 pb-0">
+                                <div>
+                                    <div class="d-flex">
+                                        <label class="main-content-label my-auto pt-2">All Orders</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body pt-2">
+                                <div class="row table-filter align-items-center">
+                                    <div class="col-xl-3 col-lg-12">
+                                        <div class="d-flex align-items-center filter-group">
+                                            <span>Show</span>
+                                            <div class="d-flex ms-2 mx-2">
+                                                <div>
+                                                    <select name="quantity" id="select-countries17" class="form-control  wd-150" data-trigger>
+                                                        <option value="1" selected="">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <span>entries</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-9 col-lg-12 d-lg-flex justify-content-end align-items-center mb-3 mt-2 mt-xl-0">
+                                        <div class="d-flex mt-3 mt-lg-0">
+                                            <div class="filter-group d-inline-flex w-100">
+                                                <input type="text" class="form-control rounded-end-0" placeholder="search">
+                                                <button type="button" class="btn btn-primary"><i class="fa fa-search"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="d-sm-flex mt-3 mt-lg-0 ms-3">
+                                            <div class="filter-group d-flex align-items-center mb-2 mb-sm-0">
+                                                <label class="mt-2 me-2">Location</label>
+                                                <select class="form-control" data-trigger>
+                                                    <option>All</option>
+                                                    <option>Berlin</option>
+                                                    <option>London</option>
+                                                    <option>Madrid</option>
+                                                    <option>New York</option>
+                                                    <option>Paris</option>
+                                                </select>
+                                            </div>
+                                            <div class="filter-group ms-3 d-flex align-items-center">
+                                                <label class="mt-2 me-2">Status</label>
+                                                <select class="form-control" data-trigger>
+                                                    <option>Any</option>
+                                                    <option>Delivered</option>
+                                                    <option>Shipped</option>
+                                                    <option>Pending</option>
+                                                    <option>Cancelled</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table-responsive border border-bottom-0">
+                                    <table class="table mb-0 text-nowrap text-md-nowrap">
+                                        <thead>
+                                            <tr class="border-bottom">
+                                                <th>ID</th>
+                                                <th>Invoice</th>
+                                                <th>Name</th>
+                                                <th>Date</th>
+                                                <th>Total</th>
+                                                <th>Warehouse</th>
+                                                <th>Status</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="border-bottom">
+                                                <th scope="row">#W83549801</th>
+                                                <td>2</td>
+                                                <td>Anna Sthesia</td>
+                                                <td>08/11/2020</td>
+                                                <td>$1000</td>
+                                                <td>Boston</td>
+                                                <td><span class="status bg-warning"></span> Pending</td>
+                                                <td>
+                                                    <div class="button-list">
+                                                         <a href="javascript:void(0);" class="btn"><i class="bi bi-file-earmark-text"></i></a>
+                                                         <a href="javascript:void(0);" class="btn"><i class="bi bi-pencil-square"></i></a>
+                                                         <a href="javascript:void(0);" class="btn"><i class="bi bi-trash"></i></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="border-bottom">
+                                                <th scope="row">#W83549802</th>
+                                                <td>5</td>
+                                                <td>Barb Dwyer</td>
+                                                <td>15/11/2020</td>
+                                                <td>$4577</td>
+                                                <td>Washington DC</td>
+                                                <td><span class="status bg-success"></span> Delivered</td>
+                                                <td>
+                                                    <div class="button-list">
+                                                         <a href="javascript:void(0);" class="btn"><i class="bi bi-file-earmark-text"></i></a>
+                                                         <a href="javascript:void(0);" class="btn"><i class="bi bi-pencil-square"></i></a>
+                                                         <a href="javascript:void(0);" class="btn"><i class="bi bi-trash"></i></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="border-bottom">
+                                                <th scope="row">#W83549803</th>
+                                                <td>3</td>
+                                                <td>Wilma Mumduya</td>
+                                                <td>17/11/2020</td>
+                                                <td>$4500</td>
+                                                <td>San Francisco</td>
+                                                <td><span class="status bg-success"></span> Delivered</td>
+                                                <td>
+                                                    <div class="button-list">
+                                                         <a href="javascript:void(0);" class="btn"><i class="bi bi-file-earmark-text"></i></a>
+                                                         <a href="javascript:void(0);" class="btn"><i class="bi bi-pencil-square"></i></a>
+                                                         <a href="javascript:void(0);" class="btn"><i class="bi bi-trash"></i></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="border-bottom">
+                                                <th scope="row">#W83549804</th>
+                                                <td>4</td>
+                                                <td>Zack Lee</td>
+                                                <td>18/11/2020</td>
+                                                <td>$3266</td>
+                                                <td>Las Vegas</td>
+                                                <td><span class="status bg-info"></span> Refunded</td>
+                                                <td>
+                                                    <div class="button-list">
+                                                         <a href="javascript:void(0);" class="btn"><i class="bi bi-file-earmark-text"></i></a>
+                                                         <a href="javascript:void(0);" class="btn"><i class="bi bi-pencil-square"></i></a>
+                                                         <a href="javascript:void(0);" class="btn"><i class="bi bi-trash"></i></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="border-bottom">
+                                                <th scope="row">#W83549805</th>
+                                                <td>5</td>
+                                                <td>Tom Foolery</td>
+                                                <td>20/11/2020</td>
+                                                <td>$1,30,000</td>
+                                                <td>Los Angeles</td>
+                                                <td><span class="status bg-danger"></span> Cancelled</td>
+                                                <td>
+                                                    <div class="button-list">
+                                                         <a href="javascript:void(0);" class="btn"><i class="bi bi-file-earmark-text"></i></a>
+                                                         <a href="javascript:void(0);" class="btn"><i class="bi bi-pencil-square"></i></a>
+                                                         <a href="javascript:void(0);" class="btn"><i class="bi bi-trash"></i></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="border-bottom">
+                                                <th scope="row">#W83549806</th>
+                                                <td>6</td>
+                                                <td>Pat Agonia</td>
+                                                <td>22/11/2020</td>
+                                                <td>$2,535</td>
+                                                <td>Chicago</td>
+                                                <td><span class="status bg-success"></span> Delivered</td>
+                                                <td>
+                                                    <div class="button-list">
+                                                         <a href="javascript:void(0);" class="btn"><i class="bi bi-file-earmark-text"></i></a>
+                                                         <a href="javascript:void(0);" class="btn"><i class="bi bi-pencil-square"></i></a>
+                                                         <a href="javascript:void(0);" class="btn"><i class="bi bi-trash"></i></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="border-bottom">
+                                                <th scope="row">#W83549807</th>
+                                                <td>6</td>
+                                                <td>Mary Christmas</td>
+                                                <td>26/11/2020</td>
+                                                <td>$1,526</td>
+                                                <td>Los Angeles</td>
+                                                <td><span class="status bg-danger"></span> Cancelled</td>
+                                                <td>
+                                                    <div class="button-list">
+                                                         <a href="javascript:void(0);" class="btn"><i class="bi bi-file-earmark-text"></i></a>
+                                                         <a href="javascript:void(0);" class="btn"><i class="bi bi-pencil-square"></i></a>
+                                                         <a href="javascript:void(0);" class="btn"><i class="bi bi-trash"></i></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="border-bottom">
+                                                <th scope="row">#W83549808</th>
+                                                <td>5</td>
+                                                <td>Ella Vator</td>
+                                                <td>29/11/2020</td>
+                                                <td>$1,500</td>
+                                                <td>Chicago</td>
+                                                <td><span class="status bg-warning"></span> Pending</td>
+                                                <td>
+                                                    <div class="button-list">
+                                                         <a href="javascript:void(0);" class="btn"><i class="bi bi-file-earmark-text"></i></a>
+                                                         <a href="javascript:void(0);" class="btn"><i class="bi bi-pencil-square"></i></a>
+                                                         <a href="javascript:void(0);" class="btn"><i class="bi bi-trash"></i></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="border-bottom">
+                                                <th scope="row">#W83549809</th>
+                                                <td>8</td>
+                                                <td>Sharon Needles</td>
+                                                <td>01/12/2020</td>
+                                                <td>$2,30,000</td>
+                                                <td>Uk</td>
+                                                <td><span class="status bg-success"></span> Delivered</td>
+                                                <td>
+                                                    <div class="button-list">
+                                                         <a href="javascript:void(0);" class="btn"><i class="bi bi-file-earmark-text"></i></a>
+                                                         <a href="javascript:void(0);" class="btn"><i class="bi bi-pencil-square"></i></a>
+                                                         <a href="javascript:void(0);" class="btn"><i class="bi bi-trash"></i></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="border-bottom">
+                                                <th scope="row">#W83549810</th>
+                                                <td>7</td>
+                                                <td>Anne Fibbiyon</td>
+                                                <td>04/12/2020</td>
+                                                <td>$33,990</td>
+                                                <td>Chicago</td>
+                                                <td><span class="status bg-info"></span> Refunded</td>
+                                                <td>
+                                                    <div class="button-list">
+                                                         <a href="javascript:void(0);" class="btn"><i class="bi bi-file-earmark-text"></i></a>
+                                                         <a href="javascript:void(0);" class="btn"><i class="bi bi-pencil-square"></i></a>
+                                                         <a href="javascript:void(0);" class="btn"><i class="bi bi-trash"></i></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="border-bottom">
+                                                <th scope="row">#W83549811</th>
+                                                <td>9</td>
+                                                <td>Frank Senbeans</td>
+                                                <td>09/12/2020</td>
+                                                <td>$12,999</td>
+                                                <td>Chicago</td>
+                                                <td><span class="status bg-danger"></span> Cancelled</td>
+                                                <td>
+                                                    <div class="button-list">
+                                                         <a href="javascript:void(0);" class="btn"><i class="bi bi-file-earmark-text"></i></a>
+                                                         <a href="javascript:void(0);" class="btn"><i class="bi bi-pencil-square"></i></a>
+                                                         <a href="javascript:void(0);" class="btn"><i class="bi bi-trash"></i></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="border-bottom">
+                                                <th scope="row">#W83549812</th>
+                                                <td>12</td>
+                                                <td>Chris P. Bacon</td>
+                                                <td>12/12/2020</td>
+                                                <td>$15,993</td>
+                                                <td>Brazil</td>
+                                                <td><span class="status bg-success"></span> Delivered</td>
+                                                <td>
+                                                    <div class="button-list">
+                                                         <a href="javascript:void(0);" class="btn"><i class="bi bi-file-earmark-text"></i></a>
+                                                         <a href="javascript:void(0);" class="btn"><i class="bi bi-pencil-square"></i></a>
+                                                         <a href="javascript:void(0);" class="btn"><i class="bi bi-trash"></i></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <nav aria-label="..." class="mt-3">
+                                    <ul class="pagination justify-content-end">
+                                        <li class="page-item disabled">
+                                            <span class="page-link">Previous</span>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+                                        <li class="page-item active" aria-current="page">
+                                            <span class="page-link">2</span>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="javascript:void(0);">Next</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End::row-1 -->
+
+            </div>
+        </div>
+        <!-- End::app-content -->
+
+        @SPK@include("partials/headersearch_modal.html")
+        @SPK@include("partials/footer.html")
+        @SPK@include("partials/right-sidebar.html")
+
+    </div>
+
+    @SPK@include("partials/commonjs.html")
+
+    @SPK@include("partials/custom_switcherjs.html")
+
+    <!-- Custom JS -->
+    <script src="../assets/js/custom.js"></script>
+    
+
+</body>
+
+</html>

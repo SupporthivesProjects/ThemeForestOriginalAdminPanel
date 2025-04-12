@@ -1,0 +1,292 @@
+@SPK@include("partials/mainhead.html")
+
+</head>
+
+<body>
+
+    @SPK@include("partials/switcher.html")
+    @SPK@include("partials/loader.html")
+
+    <div class="page">
+        @SPK@include("partials/header.html")
+        @SPK@include("partials/sidebar.html")
+
+        <!-- Start::app-content -->
+        <div class="main-content app-content">
+            <div class="container-fluid">
+
+                @SPK@include("partials/page-header.html", {"title": "Transactions", "subtitle": 'crypto-Currencies'})
+
+                <!-- Start::row-1 -->
+                <div class="row row-sm">
+                    <div class="col-md-12 col-lg-12 col-xl-12">
+                        <div class="card custom-card transcation-crypto">
+                            <div class="card-header border-bottom-0">
+                                <div>
+                                    <div class="card-title">Transaction History</div>
+                                    <p class="d-block fs-12 mb-0 mt-2 text-muted">Transaction History it shows you who sent the transaction, how much has been sent, its destination and the fees that were paid for it.</p>
+                                </div>
+                                <div class="ms-auto">
+                                    <div class="contact-search3 me-3">
+                                        <button type="button" class="btn border-0"><i class="fe fe-search fw-semibold text-muted" aria-hidden="true"></i></button>
+                                        <input type="text" class="form-control h-6" id="typehead1" placeholder="Search here..." autocomplete="off">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table text-nowrap border">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">S.NO</th>
+                                                <th scope="col">TRANSACTION HASH</th>
+                                                <th scope="col">Date</th>
+                                                <th scope="col">From</th>
+                                                <th scope="col">To</th>
+                                                <th scope="col">Coin</th>
+                                                <th scope="col">Amount</th>
+                                                <th scope="col">Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <span class="crypto-icon bg-primary-transparent me-3 my-auto">
+                                                        <i class="fe fe-arrow-up-right text-primary"></i>
+                                                    </span>
+                                                </td>
+                                                <td class="fw-semibold">#1242232401</td>
+                                                <td>03/12/2020</td>
+                                                <td>Olive Yew</td>
+                                                <td class="my-auto"><img src="../assets/images/faces/2.jpg" class="avatar avatar-sm me-2" alt=""><span class="my-auto">Peg Legge</span></td>
+                                                <td class="fw-medium"><img src="../assets/images/svgs/crypto-currencies/btc.svg" class="wd-30 hd-30 me-2" alt="">Bitcoin</td>
+                                                <td class="text-success fw-semibold">+0.041</td>
+                                                <td><span class="text-success fw-medium">COMPLETED</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="crypto-icon bg-primary-transparent me-3 my-auto">
+                                                        <i class="fe fe-arrow-down-left text-primary"></i>
+                                                    </span>
+                                                </td>
+                                                <td class="fw-semibold">#1242232402</td>
+                                                <td>05/12/2020</td>
+                                                <td>Addie Minstra</td>
+                                                <td class="my-auto"><img src="../assets/images/faces/3.jpg" class="avatar avatar-sm me-2" alt=""><span class="my-auto">Art Decco</span></td>
+                                                <td class="fw-medium"><img src="../assets/images/svgs/crypto-currencies/eth.svg" class="wd-30 hd-30 me-2" alt="">Ethereum</td>
+                                                <td class="text-danger fw-semibold">-0.344</td>
+                                                <td><span class="text-danger fw-medium">CANCELED</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="crypto-icon bg-primary-transparent me-3 my-auto">
+                                                        <i class="fe fe-arrow-down-left text-primary"></i>
+                                                    </span>
+                                                </td>
+                                                <td class="fw-semibold">#1242232403</td>
+                                                <td>14/12/2020</td>
+                                                <td>Stan Dupp</td>
+                                                <td class="my-auto"><img src="../assets/images/faces/4.jpg" class="avatar avatar-sm me-2" alt=""><span class="my-auto">Neil Down</span></td>
+                                                <td class="fw-medium"><img src="../assets/images/svgs/crypto-currencies/xrp.svg" class="wd-30 hd-30 me-2" alt="">Ripple</td>
+                                                <td class="text-muted fw-semibold">-0.345</td>
+                                                <td><span class="text-muted fw-medium">PENDING</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="crypto-icon bg-primary-transparent me-3 my-auto">
+                                                        <i class="fe fe-arrow-up-right text-primary"></i>
+                                                    </span>
+                                                </td>
+                                                <td class="fw-semibold">#1242232404</td>
+                                                <td>16/12/2020</td>
+                                                <td>Penny Black</td>
+                                                <td class="my-auto"><img src="../assets/images/faces/5.jpg" class="avatar avatar-sm me-2" alt=""><span class="my-auto">Anna Domino</span></td>
+                                                <td class="fw-medium"><img src="../assets/images/svgs/crypto-currencies/dash.svg" class="wd-30 hd-30 me-2" alt="">Dash</td>
+                                                <td class="text-success fw-semibold">+0.132</td>
+                                                <td><span class="text-success fw-medium">COMPLETED</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="crypto-icon bg-primary-transparent me-3 my-auto">
+                                                        <i class="fe fe-arrow-down-left text-primary"></i>
+                                                    </span>
+                                                </td>
+                                                <td class="fw-semibold">#1242232405</td>
+                                                <td>18/12/2020</td>
+                                                <td>Phil Harmonic </td>
+                                                <td class="my-auto"><img src="../assets/images/faces/6.jpg" class="avatar avatar-sm me-2" alt=""><span class="my-auto">Paul Misunday</span></td>
+                                                <td class="fw-medium"><img src="../assets/images/svgs/crypto-currencies/ltc.svg" class="wd-30 hd-30 me-2" alt="">litecoin</td>
+                                                <td class="text-danger fw-semibold">-0.523</td>
+                                                <td><span class="text-danger fw-medium">CANCELED</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="crypto-icon bg-primary-transparent me-3 my-auto">
+                                                        <i class="fe fe-arrow-down-left text-primary"></i>
+                                                    </span>
+                                                </td>
+                                                <td class="fw-semibold">#1242232406</td>
+                                                <td>20/12/2020</td>
+                                                <td>Arty Ficial</td>
+                                                <td class="my-auto"><img src="../assets/images/faces/7.jpg" class="avatar avatar-sm me-2" alt=""><span class="my-auto">Marsha Mello</span></td>
+                                                <td class="fw-medium"><img src="../assets/images/svgs/crypto-currencies/xmr.svg" class="wd-30 hd-30 me-2" alt="">Monero</td>
+                                                <td class="text-muted fw-semibold">-0.232</td>
+                                                <td><span class="text-muted fw-medium">PENDING</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="crypto-icon bg-primary-transparent me-3 my-auto">
+                                                        <i class="fe fe-arrow-up-right text-primary"></i>
+                                                    </span>
+                                                </td>
+                                                <td class="fw-semibold">#1242232407</td>
+                                                <td>22/12/2020</td>
+                                                <td>Donatella Nobatti</td>
+                                                <td class="my-auto"><img src="../assets/images/faces/8.jpg" class="avatar avatar-sm me-2" alt=""><span class="my-auto">Peg Legge</span></td>
+                                                <td class="fw-medium"><img src="../assets/images/svgs/crypto-currencies/steem.svg" class="wd-30 hd-30 me-2" alt="">Steem</td>
+                                                <td class="text-success fw-semibold">+0.456</td>
+                                                <td><span class="text-success fw-medium">COMPLETED</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="crypto-icon bg-primary-transparent me-3 my-auto">
+                                                        <i class="fe fe-arrow-up-right text-primary"></i>
+                                                    </span>
+                                                </td>
+                                                <td class="fw-semibold">#1242232408</td>
+                                                <td>25/12/2020</td>
+                                                <td>Juan Annatoo</td>
+                                                <td class="my-auto"><img src="../assets/images/faces/9.jpg" class="avatar avatar-sm me-2" alt=""><span class="my-auto">Jack Dup</span></td>
+                                                <td class="fw-medium"><img src="../assets/images/svgs/crypto-currencies/miota.svg" class="wd-30 hd-30 me-2" alt="">Iota</td>
+                                                <td class="text-success fw-semibold">+0.232</td>
+                                                <td><span class="text-success fw-medium">COMPLETED</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="crypto-icon bg-primary-transparent me-3 my-auto">
+                                                        <i class="fe fe-arrow-down-left text-primary"></i>
+                                                    </span>
+                                                </td>
+                                                <td class="fw-semibold">#1242232409</td>
+                                                <td>25/12/2020</td>
+                                                <td>Stew Gots</td>
+                                                <td class="my-auto"><img src="../assets/images/faces/10.jpg" class="avatar avatar-sm me-2" alt=""><span class="my-auto">Sara Bellum</span></td>
+                                                <td class="fw-medium"><img src="../assets/images/svgs/crypto-currencies/waves.svg" class="wd-30 hd-30 me-2" alt="">Waves</td>
+                                                <td class="text-muted fw-semibold">-0.232</td>
+                                                <td><span class="text-muted fw-medium">PENDING</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="crypto-icon bg-primary-transparent me-3 my-auto">
+                                                        <i class="fe fe-arrow-down-left text-primary"></i>
+                                                    </span>
+                                                </td>
+                                                <td class="fw-semibold">#1242232410</td>
+                                                <td>28/12/2020</td>
+                                                <td>Anna Rexia</td>
+                                                <td class="my-auto"><img src="../assets/images/faces/11.jpg" class="avatar avatar-sm me-2" alt=""><span class="my-auto">Marge Arita</span></td>
+                                                <td class="fw-medium"><img src="../assets/images/svgs/crypto-currencies/neo.svg" class="wd-30 hd-30 me-2" alt="">Neo</td>
+                                                <td class="text-danger fw-semibold">-0.344</td>
+                                                <td><span class="text-danger fw-medium">CANCELED</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="crypto-icon bg-primary-transparent me-3 my-auto">
+                                                        <i class="fe fe-arrow-down-left text-primary"></i>
+                                                    </span>
+                                                </td>
+                                                <td class="fw-semibold">#1242232411</td>
+                                                <td>29/12/2020</td>
+                                                <td>Matt Innae</td>
+                                                <td class="my-auto"><img src="../assets/images/faces/12.jpg" class="avatar avatar-sm me-2" alt=""><span class="my-auto">Barry Cuda</span></td>
+                                                <td class="fw-medium"><img src="../assets/images/svgs/crypto-currencies/eos.svg" class="wd-30 hd-30 me-2" alt="">Eos</td>
+                                                <td class="text-danger fw-semibold">-0.231</td>
+                                                <td><span class="text-danger fw-medium">CANCELED</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="crypto-icon bg-primary-transparent me-3 my-auto">
+                                                        <i class="fe fe-arrow-up-right text-primary"></i>
+                                                    </span>
+                                                </td>
+                                                <td class="fw-semibold">#1242232412</td>
+                                                <td>30/12/2020</td>
+                                                <td>Gabe Lackmen</td>
+                                                <td class="my-auto"><img src="../assets/images/faces/1.jpg" class="avatar avatar-sm me-2" alt=""><span class="my-auto">Marion Gaze</span></td>
+                                                <td class="fw-medium"><img src="../assets/images/svgs/crypto-currencies/eur.svg" class="wd-30 hd-30 me-2" alt="">Euros</td>
+                                                <td class="text-success fw-semibold">+0.124</td>
+                                                <td><span class="text-success fw-medium">COMPLETED</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="crypto-icon bg-primary-transparent me-3 my-auto">
+                                                        <i class="fe fe-arrow-down-left text-primary"></i>
+                                                    </span>
+                                                </td>
+                                                <td class="fw-semibold">#1242232413</td>
+                                                <td>31/12/2020</td>
+                                                <td>Jim Nasium</td>
+                                                <td class="my-auto"><img src="../assets/images/faces/2.jpg" class="avatar avatar-sm me-2" alt=""><span class="my-auto">Marcus Down</span></td>
+                                                <td class="fw-medium"><img src="../assets/images/svgs/crypto-currencies/btc.svg" class="wd-30 hd-30 me-2" alt="">Bitcoin</td>
+                                                <td class="text-muted fw-semibold">-0.241</td>
+                                                <td><span class="text-muted fw-medium">PENDING</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="crypto-icon bg-primary-transparent me-3 my-auto">
+                                                        <i class="fe fe-arrow-up-right text-primary"></i>
+                                                    </span>
+                                                </td>
+                                                <td class="fw-semibold">#1242232414</td>
+                                                <td>02/01/2021</td>
+                                                <td>Ella Vator</td>
+                                                <td class="my-auto"><img src="../assets/images/faces/3.jpg" class="avatar avatar-sm me-2" alt=""><span class="my-auto">Gene Jacket</span></td>
+                                                <td class="fw-medium"><img src="../assets/images/svgs/crypto-currencies/eth.svg" class="wd-30 hd-30 me-2" alt="">Ethereum</td>
+                                                <td class="text-success fw-semibold">+0.134</td>
+                                                <td><span class="text-success fw-medium">COMPLETED</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="crypto-icon bg-primary-transparent me-3 my-auto">
+                                                        <i class="fe fe-arrow-down-left text-primary"></i>
+                                                    </span>
+                                                </td>
+                                                <td class="fw-semibold">#1242232415</td>
+                                                <td>04/01/2021</td>
+                                                <td>Bart Ender</td>
+                                                <td class="my-auto"><img src="../assets/images/faces/4.jpg" class="avatar avatar-sm me-2" alt=""><span class="my-auto">Marty Graw</span></td>
+                                                <td class="fw-medium"><img src="../assets/images/svgs/crypto-currencies/xrp.svg" class="wd-30 hd-30 me-2" alt="">Ripple</td>
+                                                <td class="text-muted fw-semibold">-0.244</td>
+                                                <td><span class="text-muted fw-medium">PENDING</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Row End -->
+                    </div>
+                </div>
+                <!--End::row-1 -->
+
+            </div>
+        </div>
+        <!-- End::app-content -->
+
+        @SPK@include("partials/headersearch_modal.html")
+        @SPK@include("partials/footer.html")
+        @SPK@include("partials/right-sidebar.html")
+
+    </div>
+
+    @SPK@include("partials/commonjs.html")
+
+    @SPK@include("partials/custom_switcherjs.html")
+
+    <!-- Custom JS -->
+    <script src="../assets/js/custom.js"></script>
+    
+
+</body>
+
+</html>

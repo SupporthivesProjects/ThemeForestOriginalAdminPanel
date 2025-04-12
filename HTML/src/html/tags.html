@@ -1,0 +1,192 @@
+@SPK@include("partials/mainhead.html")
+
+<!-- Prism CSS -->
+<link rel="stylesheet" href="../assets/libs/prismjs/themes/prism-coy.min.css">
+
+</head>
+
+<body>
+
+    @SPK@include("partials/switcher.html")
+    @SPK@include("partials/loader.html")
+
+    <div class="page">
+        @SPK@include("partials/header.html")
+        @SPK@include("partials/sidebar.html")
+
+        <!-- Start::app-content -->
+        <div class="main-content app-content">
+            <div class="container-fluid">
+
+                @SPK@include("partials/page-header.html", {"title": "Tags", "subtitle": 'Elements'})
+
+                <!-- Start::row-1 -->
+                <div class="row row-sm">
+                    <div class="col-xl-6">
+                        <div class="card custom-card">
+                            <div class="card-header justify-content-between">
+                                <div>
+                                    <div class="card-title">
+                                        Default Tags
+                                    </div>
+                                    <p class="text-muted mb-0 card-sub-title">Below is the pill tags example</p>
+                                </div>
+                                <div class="prism-toggle">
+                                    <button class="btn btn-sm btn-primary-light">Show Code<i class="ri-eye-line ms-2 d-inline-block align-middle fs-14"></i></button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <span class="tag tag-default mt-1 mb-1">Default</span>
+                                <span class="tag tag-dark mt-1 mb-1">Dark</span>
+                                <span class="tag tag-primary mt-1 mb-1">Primary</span>
+                                <span class="tag tag-success mt-1 mb-1">Success</span>
+                                <span class="tag tag-info mt-1 mb-1">Info</span>
+                                <span class="tag tag-warning mt-1 mb-1">Warning</span>
+                                <span class="tag tag-danger mt-1 mb-1">Danger</span>
+                            </div>
+                            <div class="card-footer d-none border-top-0">
+<!-- Prism Code -->
+<pre class="language-html"><code class="language-html">&lt;span class="tag tag-default"&gt; Default &lt;/span&gt;
+
+&lt;span class="tag tag-dark"&gt; Dark &lt;/span&gt;
+
+&lt;span class="tag tag-primary"&gt; Primary &lt;/span&gt;
+
+&lt;span class="tag tag-success"&gt; Success &lt;/span&gt;
+
+&lt;span class="tag tag-info"&gt; Info &lt;/span&gt;
+
+&lt;span class="tag tag-warning"&gt; Warning &lt;/span&gt;
+
+&lt;span class="tag tag-danger"&gt; Danger &lt;/span&gt;</code></pre>
+<!-- Prism Code -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="card custom-card">
+                            <div class="card-header justify-content-between">
+                                <div>
+                                    <div class="card-title"> Pill Tags</div>
+                                    <p class="text-muted mb-0 card-sub-title">Below is the pill tags example</p>
+                                </div>
+                                <div class="prism-toggle">
+                                    <button class="btn btn-sm btn-primary-light">Show Code<i class="ri-eye-line ms-2 d-inline-block align-middle fs-14"></i></button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <span class="tag tag-default tag-pill mt-1 mb-1">Default</span>
+                                <span class="tag tag-dark tag-pill mt-1 mb-1">Dark</span>
+                                <span class="tag tag-primary tag-pill mt-1 mb-1">Primary</span>
+                                <span class="tag tag-success tag-pill mt-1 mb-1">Success</span>
+                                <span class="tag tag-info tag-pill mt-1 mb-1">Info</span>
+                                <span class="tag tag-warning tag-pill mt-1 mb-1">Warning</span>
+                                <span class="tag tag-danger tag-pill mt-1 mb-1">Danger</span>
+                            </div>
+                            <div class="card-footer d-none border-top-0">
+<!-- Prism Code -->
+<pre class="language-html"><code class="language-html">&lt;span class="tag tag-default tag-pill"&gt; Default &lt;/span&gt;
+
+&lt;span class="tag tag-dark tag-pill"&gt; Dark &lt;/span&gt;
+
+&lt;span class="tag tag-primary tag-pill"&gt; Primary &lt;/span&gt;
+
+&lt;span class="tag tag-success tag-pill"&gt; Success &lt;/span&gt;
+
+&lt;span class="tag tag-info tag-pill"&gt; Info &lt;/span&gt;
+
+&lt;span class="tag tag-warning tag-pill"&gt; Warning &lt;/span&gt;
+
+&lt;span class="tag tag-danger tag-pill"&gt; Danger &lt;/span&gt;</code></pre>
+<!-- Prism Code -->s
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="card custom-card">
+                            <div class="card-header justify-content-between">
+                                <div>
+                                    <div class="card-title">Default Tags Addon</div>
+                                    <p class="text-muted mb-0 card-sub-title">Below is the pill tags example</p>
+                                </div>
+                                <div class="prism-toggle">
+                                    <button class="btn btn-sm btn-primary-light">Show Code<i class="ri-eye-line ms-2 d-inline-block align-middle fs-14"></i></button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="tags">
+                                    <span class="tag tag-default">
+                                        One
+                                        <a href="javascript:void(0)" class="tag-addon"><i class="fe fe-x"></i></a>
+                                    </span>
+                                    <span class="tag tag-default">
+                                        Two
+                                        <a href="javascript:void(0)" class="tag-addon"><i class="fe fe-x"></i></a>
+                                    </span>
+                                    <span class="tag tag-default">
+                                        Three
+                                        <a href="javascript:void(0)" class="tag-addon"><i class="fe fe-x"></i></a>
+                                    </span>
+                                    <span class="tag tag-default">
+                                        Four
+                                        <a href="javascript:void(0)" class="tag-addon"><i class="fe fe-x"></i></a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="card-footer d-none border-top-0">
+<!-- Prism Code -->
+<pre class="language-html"><code class="language-html">&lt;span class="tag tag-default" &gt;
+One
+&lt; a href="javascript:void(0)" class="tag-addon"&gt; &lt;i&gt; class="fe fe-x"&lt;/i&gt;&lt;/a&gt;
+&lt;/span&gt;
+
+&lt;span class="tag tag-default" &gt;
+Two
+&lt; a href="javascript:void(0)" class="tag-addon"&gt; &lt;i&gt; class="fe fe-x"&lt;/i&gt;&lt;/a&gt;
+&lt;/span&gt;
+
+&lt;span class="tag tag-default" &gt;
+Three
+&lt; a href="javascript:void(0)" class="tag-addon"&gt; &lt;i&gt; class="fe fe-x"&lt;/i&gt;&lt;/a&gt;
+&lt;/span&gt;
+
+&lt;span class="tag tag-default" &gt;
+Four
+&lt; a href="javascript:void(0)" class="tag-addon"&gt; &lt;i&gt; class="fe fe-x"&lt;/i&gt;&lt;/a&gt;
+&lt;/span&gt;</code></pre>
+<!-- Prism Code -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!--End::row-1 -->
+
+            </div>
+        </div>
+        <!-- End::app-content -->
+
+        @SPK@include("partials/headersearch_modal.html")
+        @SPK@include("partials/footer.html")
+        @SPK@include("partials/right-sidebar.html")
+
+    </div>
+
+    @SPK@include("partials/commonjs.html")
+
+    @SPK@include("partials/custom_switcherjs.html")
+
+    <!-- Prism JS -->
+    <script src="../assets/libs/prismjs/prism.js"></script>
+    <script src="../assets/js/prism-custom.js"></script>
+
+    <!-- Alerts JS -->
+    <script src="../assets/js/alerts.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../assets/js/custom.js"></script>
+    
+
+</body>
+
+</html>

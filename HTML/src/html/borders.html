@@ -1,0 +1,445 @@
+@SPK@include("partials/mainhead.html")
+
+<!-- Prism CSS -->
+<link rel="stylesheet" href="../assets/libs/prismjs/themes/prism-coy.min.css">
+
+</head>
+
+<body>
+
+    @SPK@include("partials/switcher.html")
+    @SPK@include("partials/loader.html")
+
+    <div class="page">
+
+        @SPK@include("partials/header.html")
+        @SPK@include("partials/sidebar.html")
+
+        <!--APP-CONTENT START-->
+        <div class="main-content app-content">
+            <div class="container-fluid">
+
+                @SPK@include("partials/page-header.html", {"title": "Borders", "subtitle": 'Utilities'})
+
+                <!-- Start:: row-1 -->
+                <div class="row row-sm">
+                    <div class="col-xl-6">
+                        <div class="card custom-card">
+                            <div class="card-header justify-content-between">
+                                <div class="card-title">
+                                    Borders
+                                </div>
+                                <div class="prism-toggle">
+                                    <button class="btn btn-sm btn-primary-light">Show Code<i class="ri-eye-line ms-2 d-inline-block align-middle fs-14"></i></button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <span class="border border-container d-inline-flex">
+                                    <span class="fs-11 text-gray-5 m-auto">Border</span>
+                                </span>
+                                <span class="border-top border-container d-inline-flex">
+                                    <span class="fs-11 text-gray-5 m-auto">Border-top</span>
+                                </span>
+                                <span class="border-end border-container d-inline-flex">
+                                    <span class="fs-11 text-gray-5 m-auto">Border-right</span>
+                                </span>
+                                <span class="border-bottom border-container d-inline-flex">
+                                    <span class="fs-11 text-gray-5 m-auto">Border-bottom</span>
+                                </span>
+                                <span class="border-start border-container d-inline-flex">
+                                    <span class="fs-11 text-gray-5 m-auto">Border-left</span>
+                                </span>
+                            </div>
+                            <div class="card-footer d-none border-top-0">
+<!-- Prism Code -->
+<pre class="language-html"><code class="language-html">
+    &lt;span class="border border-container"&gt;
+        &lt;span class="fs-11 text-gray-5 m-auto"&gt;Border&lt;/span&gt;
+    &lt;/span&gt;
+    &lt;span class="border-top border-container d-inline-flex"&gt;
+        &lt;span class="fs-11 text-gray-5 m-auto"&gt;Border-top&lt;/span&gt;
+    &lt;/span&gt;
+    &lt;span class="border-end border-container d-inline-flex"&gt;
+        &lt;span class="fs-11 text-gray-5 m-auto"&gt;Border-right&lt;/span&gt;
+    &lt;/span&gt;
+    &lt;span class="border-bottom border-container d-inline-flex"&gt;
+        &lt;span class="fs-11 text-gray-5 m-auto"&gt;Border-bottom&lt;/span&gt;
+    &lt;/span&gt;
+    &lt;span class="border-start border-container d-inline-flex"&gt;
+        &lt;span class="fs-11 text-gray-5 m-auto"&gt;Border-left&lt;/span&gt;
+    &lt;/span&gt;</code></pre>
+<!-- Prism Code -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="card custom-card">
+                            <div class="card-header justify-content-between">
+                                <div class="card-title">
+                                    Remove borders
+                                </div>
+                                <div class="prism-toggle">
+                                    <button class="btn btn-sm btn-primary-light">Show Code<i class="ri-eye-line ms-2 d-inline-block align-middle fs-14"></i></button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <span class="border-0 border-container d-inline-flex">
+                                    <span class="fs-11 text-gray-5 m-auto">No-Border</span>
+                                </span>
+                                <span class="border border-top-0 border-container d-inline-flex">
+                                    <span class="fs-11 text-gray-5 m-auto">Top</span>
+                                </span>
+                                <span class="border border-end-0 border-container d-inline-flex">
+                                    <span class="fs-11 text-gray-5 m-auto">Right</span>
+                                </span>
+                                <span class="border border-bottom-0 border-container d-inline-flex">
+                                    <span class="fs-11 text-gray-5 m-auto">Bottom</span>
+                                </span>
+                                <span class="border border-start-0 border-container d-inline-flex">
+                                    <span class="fs-11 text-gray-5 m-auto">Left</span>
+                                </span>
+                            </div>
+                            <div class="card-footer d-none border-top-0">
+<!-- Prism Code -->
+<pre class="language-html"><code class="language-html">
+    &lt;span class="border-0 border-container d-inline-flex"&gt;
+        &lt;span class="fs-11 text-gray-5 m-auto"&gt;No-Border&lt;/span&gt;
+    &lt;/span&gt;
+    &lt;span class="border border-top-0 border-container d-inline-flex"&gt;
+        &lt;span class="fs-11 text-gray-5 m-auto"&gt;Top&lt;/span&gt;
+    &lt;/span&gt;
+    &lt;span class="border border-end-0 border-container d-inline-flex"&gt;
+        &lt;span class="fs-11 text-gray-5 m-auto"&gt;Right&lt;/span&gt;
+    &lt;/span&gt;
+    &lt;span class="border border-bottom-0 border-container d-inline-flex"&gt;.
+        &lt;span class="fs-11 text-gray-5 m-auto"&gt;Bottom&lt;/span&gt;
+    &lt;/span&gt;
+    &lt;span class="border border-start-0 border-container d-inline-flex"&gt;
+        &lt;span class="fs-11 text-gray-5 m-auto"&gt;Left&lt;/span&gt;
+    &lt;/span&gt;</code></pre>
+<!-- Prism Code -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End:: row-1 -->
+
+                <!-- Start:: row-2 -->
+                <div class="row row-sm">
+                    <div class="col-xl-5">
+                        <div class="card custom-card">
+                            <div class="card-header justify-content-between">
+                                <div class="card-title">
+                                    Border Widths
+                                </div>
+                                <div class="prism-toggle">
+                                    <button class="btn btn-sm btn-primary-light">Show Code<i class="ri-eye-line ms-2 d-inline-block align-middle fs-14"></i></button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <span class="border border-container d-inline-flex border-1">
+                                    <span class="fs-11 text-gray-5 m-auto">1px</span>
+                                </span>
+                                <span class="border border-container d-inline-flex border-2">
+                                    <span class="fs-11 text-gray-5 m-auto">2px</span>
+                                </span>
+                                <span class="border border-container d-inline-flex border-3">
+                                    <span class="fs-11 text-gray-5 m-auto">3px</span>
+                                </span>
+                                <span class="border border-container d-inline-flex border-4">
+                                    <span class="fs-11 text-gray-5 m-auto">4px</span>
+                                </span>
+                                <span class="border border-container d-inline-flex border-5">
+                                    <span class="fs-11 text-gray-5 m-auto">5px</span>
+                                </span>
+                            </div>
+                            <div class="card-footer d-none border-top-0">
+<!-- Prism Code -->
+<pre class="language-html"><code class="language-html">
+    &lt;span class="border border-container d-inline-flex border-1"&gt;
+        &lt;span class="fs-11 text-gray-5 m-auto"&gt;1px&lt;/span&gt;
+    &lt;/span&gt;
+    &lt;span class="border border-container d-inline-flex border-2"&gt;
+        &lt;span class="fs-11 text-gray-5 m-auto"&gt;2px&lt;/span&gt;
+    &lt;/span&gt;
+    &lt;span class="border border-container d-inline-flex border-3"&gt;
+        &lt;span class="fs-11 text-gray-5 m-auto"&gt;3px&lt;/span&gt;
+    &lt;/span&gt;
+    &lt;span class="border border-container d-inline-flex border-4"&gt;
+        &lt;span class="fs-11 text-gray-5 m-auto"&gt;4px&lt;/span&gt;
+    &lt;/span&gt;
+    &lt;span class="border border-container d-inline-flex border-5"&gt;
+        &lt;span class="fs-11 text-gray-5 m-auto"&gt;5px&lt;/span&gt;
+    &lt;/span&gt;</code></pre>
+<!-- Prism Code -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-7">
+                        <div class="card custom-card">
+                            <div class="card-header justify-content-between">
+                                <div class="card-title">
+                                    Border colors
+                                </div>
+                                <div class="prism-toggle">
+                                    <button class="btn btn-sm btn-primary-light">Show Code<i class="ri-eye-line ms-2 d-inline-block align-middle fs-14"></i></button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <span class="border border-container border-primary d-inline-flex">
+                                    <span class="fs-11 text-primary m-auto">bd-primary</span>
+                                </span>
+                                <span class="border border-container border-secondary d-inline-flex">
+                                    <span class="fs-11 text-secondary m-auto">bd-secondary</span>
+                                </span>
+                                <span class="border border-container border-success d-inline-flex">
+                                    <span class="fs-11 text-success m-auto">bd-success</span>
+                                </span>
+                                <span class="border border-container border-danger d-inline-flex">
+                                    <span class="fs-11 text-danger m-auto">bd-danger</span>
+                                </span>
+                                <span class="border border-container border-warning d-inline-flex">
+                                    <span class="fs-11 text-warning m-auto">bd-warning</span>
+                                </span>
+                                <span class="border border-container border-info d-inline-flex">
+                                    <span class="fs-11 text-info m-auto">bd-info</span>
+                                </span>
+                                <span class="border border-container border-light d-inline-flex">
+                                    <span class="fs-11 text-gray-2 m-auto">bd-light</span>
+                                </span>
+                                <span class="border border-container border-dark d-inline-flex">
+                                    <span class="fs-11 text-dark m-auto">bd-dark</span>
+                                </span>
+                                <span class="border border-container border-white d-inline-flex">
+                                    <span class="fs-11 text-dark m-auto">bd-white</span>
+                                </span>
+                            </div>
+                            <div class="card-footer d-none border-top-0">
+<!-- Prism Code -->
+<pre class="language-html"><code class="language-html">
+    &lt;span class="border border-container border-primary d-inline-flex"&gt;
+        &lt;span class="fs-11 text-primary m-auto"&gt;bd-primary&lt;/span&gt;
+    &lt;/span&gt;
+    &lt;span class="border border-container border-secondary d-inline-flex"&gt;
+        &lt;span class="fs-11 text-secondary m-auto"&gt;bd-secondary&lt;/span&gt;
+    &lt;/span&gt;
+    &lt;span class="border border-container border-success d-inline-flex"&gt;
+        &lt;span class="fs-11 text-success m-auto"&gt;bd-success&lt;/span&gt;
+    &lt;/span&gt;
+    &lt;span class="border border-container border-danger d-inline-flex"&gt;
+        &lt;span class="fs-11 text-danger m-auto"&gt;bd-danger&lt;/span&gt;
+    &lt;/span&gt;
+    &lt;span class="border border-container border-warning d-inline-flex"&gt;
+        &lt;span class="fs-11 text-warning m-auto"&gt;bd-warning&lt;/span&gt;
+    &lt;/span&gt;
+    &lt;span class="border border-container border-info d-inline-flex"&gt;
+        &lt;span class="fs-11 text-info m-auto"&gt;bd-info&lt;/span&gt;
+    &lt;/span&gt;
+    &lt;span class="border border-container border-light d-inline-flex"&gt;
+        &lt;span class="fs-11 text-gray-2 m-auto"&gt;bd-light&lt;/span&gt;
+    &lt;/span&gt;
+    &lt;span class="border border-container border-dark d-inline-flex"&gt;
+        &lt;span class="fs-11 text-dark m-auto"&gt;bd-dark&lt;/span&gt;
+    &lt;/span&gt;
+    &lt;span class="border border-container border-white d-inline-flex"&gt;
+        &lt;span class="fs-11 text-dark m-auto"&gt;bd-white&lt;/span&gt;
+    &lt;/span&gt;</code></pre>
+<!-- Prism Code -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End:: row-2 -->
+
+                <!-- Start:: row-3 -->
+                <div class="row row-sm">
+                    <div class="col-xl-6">
+                        <div class="card custom-card">
+                            <div class="card-header justify-content-between">
+                                <div class="card-title">
+                                    Border color Styling
+                                </div>
+                                <div class="prism-toggle">
+                                    <button class="btn btn-sm btn-primary-light">Show Code<i class="ri-eye-line ms-2 d-inline-block align-middle fs-14"></i></button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="mb-4">
+                                    <label for="exampleFormControlInput1" class="form-label">Email
+                                        address</label>
+                                    <input type="email" class="form-control border-success"
+                                        id="exampleFormControlInput1" placeholder="name@example.com">
+                                </div>
+                                <div class="h4 pb-3 mb-4 text-danger border-bottom border-danger">
+                                    Below Shows Danger Border
+                                </div>
+                                <div
+                                    class="p-3 bg-info bg-opacity-10 border border-info border-start-0 rounded-end mb-1">
+                                    Customizing borders with background colors
+                                </div>
+                            </div>
+                            <div class="card-footer d-none border-top-0">
+<!-- Prism Code -->
+<pre class="language-html"><code class="language-html">&lt;div class="mb-4"&gt;
+    &lt;label for="exampleFormControlInput1" class="form-label"&gt;Email
+        address&lt;/label&gt;
+    &lt;input type="email" class="form-control border-success"
+        id="exampleFormControlInput1" placeholder="name@example.com"&gt;
+&lt;/div&gt;
+&lt;div class="h4 pb-3 mb-4 text-danger border-bottom border-danger"&gt;
+    Below Shows Danger Border
+&lt;/div&gt;
+&lt;div
+    class="p-3 bg-info bg-opacity-10 border border-info border-start-0 rounded-end mb-1"&gt;
+    Customizing borders with background colors
+&lt;/div&gt;</code></pre>
+<!-- Prism Code -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="card custom-card">
+                            <div class="card-header justify-content-between">
+                                <div class="card-title">
+                                    Border with opacity
+                                </div>
+                                <div class="prism-toggle">
+                                    <button class="btn btn-sm btn-primary-light">Show Code<i class="ri-eye-line ms-2 d-inline-block align-middle fs-14"></i></button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="border border-success p-2 mb-2">This is default success border</div>
+                                <div class="border border-success p-2 mb-2 border-opacity-75">This is 75%
+                                    opacity
+                                    success border
+                                </div>
+                                <div class="border border-success p-2 mb-2 border-opacity-50">This is 50%
+                                    opacity
+                                    success border
+                                </div>
+                                <div class="border border-success p-2 mb-2 border-opacity-25">This is 25%
+                                    opacity
+                                    success border
+                                </div>
+                                <div class="border border-success p-2 border-opacity-10">This is 10% opacity
+                                    success
+                                    border
+                                </div>
+                            </div>
+                            <div class="card-footer d-none border-top-0">
+<!-- Prism Code -->
+<pre class="language-html"><code class="language-html">&lt;div class="border border-success p-2 mb-2"&gt;This is default success border&lt;/div&gt;
+    &lt;div class="border border-success p-2 mb-2 border-opacity-75"&gt;This is 75%
+        opacity
+        success border
+    &lt;/div&gt;
+    &lt;div class="border border-success p-2 mb-2 border-opacity-50"&gt;This is 50%
+        opacity
+        success border
+    &lt;/div&gt;
+    &lt;div class="border border-success p-2 mb-2 border-opacity-25"&gt;This is 25%
+        opacity
+        success border
+    &lt;/div&gt;
+    &lt;div class="border border-success p-2 border-opacity-10"&gt;This is 10% opacity
+        success
+        border
+    &lt;/div&gt;</code></pre>
+<!-- Prism Code -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End:: row-3 -->
+
+                <!-- Start:: row-4 -->
+                <div class="row row-sm">
+                    <div class="col-xl-6">
+                        <div class="card custom-card">
+                            <div class="card-header justify-content-between">
+                                <div class="card-title">
+                                    Border Radius
+                                </div>
+                                <div class="prism-toggle">
+                                    <button class="btn btn-sm btn-primary-light">Show Code<i class="ri-eye-line ms-2 d-inline-block align-middle fs-14"></i></button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <img src="../assets/images/media/media-58.jpg" class="bd-placeholder-img rounded" alt="...">
+                                <img src="../assets/images/media/media-58.jpg" class="bd-placeholder-img rounded-top" alt="...">
+                                <img src="../assets/images/media/media-58.jpg" class="bd-placeholder-img rounded-end" alt="...">
+                                <img src="../assets/images/media/media-58.jpg" class="bd-placeholder-img rounded-bottom" alt="...">
+                                <img src="../assets/images/media/media-58.jpg" class="bd-placeholder-img rounded-start" alt="...">
+                                <img src="../assets/images/media/media-58.jpg" class="bd-placeholder-img rounded-circle" alt="...">
+                                <img src="../assets/images/media/media-58.jpg" class="bd-placeholder-img  rounded-pill" alt="...">
+                            </div>
+                            <div class="card-footer d-none border-top-0">
+<!-- Prism Code -->
+<pre class="language-html"><code class="language-html">&lt;img src="../assets/images/media/media-58.jpg" class="bd-placeholder-img rounded" alt="..."&gt;
+    &lt;img src="../assets/images/media/media-58.jpg" class="bd-placeholder-img rounded-top" alt="..."&gt;
+    &lt;img src="../assets/images/media/media-58.jpg" class="bd-placeholder-img rounded-end" alt="..."&gt;
+    &lt;img src="../assets/images/media/media-58.jpg" class="bd-placeholder-img rounded-bottom" alt="..."&gt;
+    &lt;img src="../assets/images/media/media-58.jpg" class="bd-placeholder-img rounded-start" alt="..."&gt;
+    &lt;img src="../assets/images/media/media-58.jpg" class="bd-placeholder-img rounded-circle" alt="..."&gt;
+    &lt;img src="../assets/images/media/media-58.jpg" class="bd-placeholder-img  rounded-pill" alt="..."&gt;</code></pre>
+<!-- Prism Code -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="card custom-card">
+                            <div class="card-header justify-content-between">
+                                <div class="card-title">
+                                    Sizes
+                                </div>
+                                <div class="prism-toggle">
+                                    <button class="btn btn-sm btn-primary-light">Show Code<i class="ri-eye-line ms-2 d-inline-block align-middle fs-14"></i></button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <img src="../assets/images/media/media-58.jpg" class="bd-placeholder-img bd-placeholder-img rounded-0" alt="...">
+                                <img src="../assets/images/media/media-58.jpg" class="bd-placeholder-img bd-placeholder-img rounded-1" alt="...">
+                                <img src="../assets/images/media/media-58.jpg" class="bd-placeholder-img bd-placeholder-img rounded-2" alt="...">
+                                <img src="../assets/images/media/media-58.jpg" class="bd-placeholder-img bd-placeholder-img rounded-3" alt="...">
+                                <img src="../assets/images/media/media-58.jpg" class="bd-placeholder-img bd-placeholder-img rounded-4" alt="...">
+                                <img src="../assets/images/media/media-58.jpg" class="bd-placeholder-img bd-placeholder-img rounded-5" alt="...">
+                            </div>
+                            <div class="card-footer d-none border-top-0">
+<!-- Prism Code -->
+<pre class="language-html"><code class="language-html">&lt;img src="../assets/images/media/media-58.jpg" class="bd-placeholder-img bd-placeholder-img rounded-0" alt="..."&gt;
+    &lt;img src="../assets/images/media/media-58.jpg" class="bd-placeholder-img bd-placeholder-img rounded-1" alt="..."&gt;
+    &lt;img src="../assets/images/media/media-58.jpg" class="bd-placeholder-img bd-placeholder-img rounded-2" alt="..."&gt;
+    &lt;img src="../assets/images/media/media-58.jpg" class="bd-placeholder-img bd-placeholder-img rounded-3" alt="..."&gt;
+    &lt;img src="../assets/images/media/media-58.jpg" class="bd-placeholder-img bd-placeholder-img rounded-4" alt="..."&gt;
+    &lt;img src="../assets/images/media/media-58.jpg" class="bd-placeholder-img bd-placeholder-img rounded-5" alt="..."&gt;</code></pre>
+<!-- Prism Code -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End:: row-4 -->
+
+            </div>
+        </div>
+        <!--APP-CONTENT CLOSE-->
+
+        @SPK@include("partials/headersearch_modal.html")
+        @SPK@include("partials/footer.html")
+        @SPK@include("partials/right-sidebar.html")
+
+    </div>
+
+    @SPK@include("partials/commonjs.html")
+
+    @SPK@include("partials/custom_switcherjs.html")
+
+    <!-- Prism JS -->
+    <script src="../assets/libs/prismjs/prism.js"></script>
+    <script src="../assets/js/prism-custom.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../assets/js/custom.js"></script>
+
+</body>
+
+</html>

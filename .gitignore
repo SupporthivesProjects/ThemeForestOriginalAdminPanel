@@ -1,0 +1,44 @@
+.DS_Store
+
+# Ignore backup and system files
+.DS_Store
+Thumbs.db
+*.log
+
+# Ignore ZIPs and archives
+*.zip
+*.rar
+*.7z
+*.tar.gz
+
+# Ignore node-related files (if using npm tools)
+node_modules/
+package-lock.json
+
+# Ignore compiled assets (optional, depends on your workflow)
+dist/
+build/
+
+# Ignore Sass cache
+.sass-cache/
+
+# Ignore dependency managers
+bower_components/
+vendor/
+
+# Ignore configuration environments (optional)
+.env
+.env.*
+
+# Ignore WordPress-specific (if it's a WP theme)
+wp-config.php
+wp-content/uploads/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/backup-*
+
+# Ignore IDE/editor stuff
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
